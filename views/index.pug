@@ -1,0 +1,66 @@
+//- index.pug
+doctype html 
+html
+  head
+    title Arpan Dance Academy 
+    style 
+      include ../static/style.css
+    body 
+      nav#navbar 
+        ul
+          div#logo
+            img(src="/static/img/logo.png")
+            | ADA
+          li #[a(href="/") Home]
+          li #[a(href="/") About]
+          li #[a(href="/") Contact-Us]
+          li #[a(href="/") Class-Info]
+          li #[a(href="/") About]
+
+      section#intro-section 
+        div Welcome to the Arpan's Dance Academy 
+        div.small Dance for your Health
+
+      section#mission-section
+        h2 Our Mission
+        div.card
+          h3 Dance Perfection
+            div.card-box 
+              div.card-img 
+                img(src="/static/img/1.png")
+              div.card-content
+                p Lorem ipsum dolor sit amet.
+
+        div.card
+          h3 Dance The way you like
+            div.card-box
+              div.card-img
+                img(src="/static/img/2.png")
+              div.card-content
+                p Lorem ipsum dolor sit amet.
+          
+        div.card
+          h3 Expert Teaching  
+            div.card-box
+              div.card-img
+                img(src="/static/img/3.png")
+              div.card-content
+                p Lorem ipsum dolor sit amet.
+                
+      section#sponsor-section 
+        h2 Our Sponsors 
+        div.spo-img
+         img(src="/static/img/logo1.png" alt="Our-Sponsors" class="sp-image")
+         img(src="/static/img/logo2.png" alt="Our-Sponsors" class="sp-image")
+         img(src="/static/img/logo3.png" alt="Our-Sponsors" class="sp-image")
+         img(src="/static/img/logo4.png" alt="Our-Sponsors" class="sp-image")
+
+      footer#footer
+        | Copyright © 2019 ArpanDanceAcademy.com | All Rights Reserved
+        
+
+      //- h1 my website
+      //- p welcome to our site dance acedemy
+      script 
+        include ../static/index.js
+
